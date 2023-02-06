@@ -1,10 +1,19 @@
-
-
+import Search from "./components/Search";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
 function App() {
   return (
-    <div className="App">
+    <div className="app">
+      <div className="container">
+        <div className="App">
+          <Search></Search>
+          <Main></Main>
+          <Footer></Footer>
+        </div>
 
+      </div>
     </div>
+
   );
 }
 
