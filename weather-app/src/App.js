@@ -6,9 +6,7 @@ function App() {
     <div className="app">
       <div className="container">
         <div className="App">
-          <Search></Search>
           <Main></Main>
-          <Footer></Footer>
         </div>
 
       </div>

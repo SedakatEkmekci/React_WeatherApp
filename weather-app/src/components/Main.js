@@ -5,16 +5,16 @@ function Main() {
     return (
         <div className="top">
             <div className="location">
-                <p>{data.name}</p>
+                <p>İstanbul</p>
             </div>
             <div className="temp">
 
-                {data.main ? <h1>{data.main.temp.toFixed()}°C </h1> : null}
+                <h1>25°C </h1>
             </div>
             <div className="description">
-                {data.weather ? <p>{data.weather[0].main}</p> : null}
+                <p>  Bulutlu</p>
             </div>
-        </div>
+        </div >
     )
 }
 
