@@ -2,10 +2,11 @@ import React from 'react';
 import { useData } from '../Context/WeatherContext';
 
 
+
 function Body() {
     const { data, setData } = useData();
     return (
-        <div className='container'>
+        <div className="container">
             <div className="top">
                 <div className="location">
                     <p>{data.name}</p>
@@ -38,7 +39,9 @@ function Body() {
                     </div>
                 </div>
             }
+
         </div >
+
 
 
     )
