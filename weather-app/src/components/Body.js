@@ -1,6 +1,7 @@
 import React from 'react';
 import { useData } from '../Context/WeatherContext';
 
+
 function Body() {
     const { data, setData } = useData();
     return (
@@ -14,10 +15,14 @@ function Body() {
                     {data.main ? <h1>{data.main.temp.toFixed()}°C </h1> : null}
                 </div>
                 <div className="description">
-                    {data.weather ? <p>{data.weather[0].main}</p> : null}
+                    {data.weather ? <p>{data.weather[0].description}</p> : null}
+                    {data.weather ? <i>{data.weather[0].icon}</i> : null}
                 </div>
+
+
             </div>
-            {data.name != undefined &&
+            {
+                data.name != undefined &&
                 <div className="bottom">
                     <div className="feels">
                         {data.main ? <p className='bold'>{data.main.feels_like.toFixed()}°C </p> : null}
@@ -33,7 +38,7 @@ function Body() {
                     </div>
                 </div>
             }
-        </div>
+        </div >
 
 
     )
