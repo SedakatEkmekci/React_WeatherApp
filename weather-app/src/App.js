@@ -14,10 +14,9 @@ function App() {
         <div className="search">
           <Search />
         </div>
-        <div className="container">
-          <Body></Body>
+        <Body />
 
-        </div>
+
       </WeatherProvider>
     </div>
 
