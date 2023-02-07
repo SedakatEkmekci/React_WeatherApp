@@ -1,3 +1,4 @@
+import "./bootstrap/dist/css/bootstrap.min.css"
 import Search from "./components/Search";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
