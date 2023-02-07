@@ -16,7 +16,7 @@ function Body() {
                 </div>
                 <div className="description">
                     {data.weather ? <p>{data.weather[0].description}</p> : null}
-                    {data.weather ? <i>{data.weather[0].icon}</i> : null}
+                    {data.weather ? <img src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`} /> : null}
                 </div>
 
 
