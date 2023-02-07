@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { WeatherProvider } from './Context/WeatherContext';
 import Search from './components/Search';
 
@@ -9,9 +8,18 @@ function App() {
 
 
   return (
-    <WeatherProvider>
-      <Search />
-    </WeatherProvider>
+    <div className="app">
+      <WeatherProvider>
+        <div className="search">
+          <Search />
+        </div>
+        <div className="container">
+
+        </div>
+      </WeatherProvider>
+    </div>
+
+
   )
 }
 
