@@ -1,5 +1,6 @@
 import { WeatherProvider } from './Context/WeatherContext';
 import Search from './components/Search';
+import Body from './components/Body';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
           <Search />
         </div>
         <div className="container">
+          <Body></Body>
 
         </div>
       </WeatherProvider>
